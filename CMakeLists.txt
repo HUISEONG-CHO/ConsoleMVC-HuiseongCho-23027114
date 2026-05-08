@@ -4,7 +4,10 @@ project(ConsoleMVC CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(ConsoleMVC src/main.cpp)
+add_executable(ConsoleMVC
+    src/main.cpp
+    src/model/Item.cpp
+)
 
 include(FetchContent)
 FetchContent_Declare(
