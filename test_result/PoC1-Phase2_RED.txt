@@ -1,0 +1,16 @@
+Phase    : PoC1-Phase2
+Stage    : RED
+Date     : 2026-05-08
+Result   : FAIL
+
+[테스트 목록]
+- ItemTest.ConstructorSetsFields : FAIL
+  원인 : model/Item.h 미존재로 컴파일 불가
+- ItemTest.DefaultConstructor    : FAIL
+  원인 : model/Item.h 미존재로 컴파일 불가
+- ItemTest.GetterReturnsCorrectValues : FAIL
+  원인 : model/Item.h 미존재로 컴파일 불가
+
+[빌드 오류]
+error C1083: 포함 파일을 열 수 없습니다. 'model/Item.h': No such file or directory
+→ src/model/Item.h / Item.cpp 미구현 상태 (의도된 RED 실패)
