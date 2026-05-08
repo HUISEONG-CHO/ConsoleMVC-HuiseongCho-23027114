@@ -1,0 +1,4 @@
+add_executable(ConsoleMVC_Tests test_placeholder.cpp)
+target_link_libraries(ConsoleMVC_Tests GTest::gtest_main)
+include(GoogleTest)
+gtest_discover_tests(ConsoleMVC_Tests)
