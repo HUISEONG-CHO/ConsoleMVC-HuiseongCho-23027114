@@ -1,7 +1,15 @@
+#ifdef _WIN32
+#define NOMINMAX
+#include <windows.h>
+#endif
 #include "controller/ItemController.h"
 #include "view/ItemView.h"
 
 int main() {
+#ifdef _WIN32
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+#endif
     ItemController controller;
     ItemView view;
 
