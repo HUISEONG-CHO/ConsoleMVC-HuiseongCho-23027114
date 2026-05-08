@@ -1,0 +1,31 @@
+Phase    : PoC1-Phase5
+Stage    : 통합 검증 (콘솔 출력)
+Date     : 2026-05-08
+Result   : PASS
+
+[콘솔 출력 결과]
+=== Scenario 1: Add 3 Items ===
+=== Item List ===
+[Item] ID: 1 | Name: Apple  | Quantity: 50
+[Item] ID: 2 | Name: Banana | Quantity: 30
+[Item] ID: 3 | Name: Orange | Quantity: 40
+=================
+=== Scenario 2: Update Item 2 (quantity 30 -> 99) ===
+=== Item List ===
+[Item] ID: 1 | Name: Apple  | Quantity: 50
+[Item] ID: 2 | Name: Banana | Quantity: 99
+[Item] ID: 3 | Name: Orange | Quantity: 40
+=================
+=== Scenario 3: Delete Item 1 ===
+=== Item List ===
+[Item] ID: 2 | Name: Banana | Quantity: 99
+[Item] ID: 3 | Name: Orange | Quantity: 40
+=================
+
+[기존 GTest]
+- 12 / 12 PASS (회귀 없음)
+
+[완료 기준 체크]
+- 3개 시나리오 콘솔 출력 확인 : OK
+- 레이어 역할 분리 확인        : OK (main.cpp는 연결만, 로직 없음)
+- 기존 GTest 회귀 없음         : OK
