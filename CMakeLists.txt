@@ -8,6 +8,7 @@ add_executable(ConsoleMVC
     src/main.cpp
     src/model/Item.cpp
     src/controller/ItemController.cpp
+    src/view/ItemView.cpp
 )
 target_include_directories(ConsoleMVC PRIVATE src)
 
