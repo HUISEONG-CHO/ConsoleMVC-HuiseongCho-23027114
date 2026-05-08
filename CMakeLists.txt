@@ -7,7 +7,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(ConsoleMVC
     src/main.cpp
     src/model/Item.cpp
+    src/controller/ItemController.cpp
 )
+target_include_directories(ConsoleMVC PRIVATE src)
 
 include(FetchContent)
 FetchContent_Declare(
